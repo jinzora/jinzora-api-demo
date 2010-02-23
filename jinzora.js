@@ -5,20 +5,14 @@ var homelink = jz.catalog;
 
   var APIPos = -1;
   var APICalls = new Array();
-  function callBrowseAPI(service, skipHistory) { // opt request
+  function callBrowseAPI(service, skipHistory) {
     if (!skipHistory) {
       APIPos++;
       APICalls.length = APIPos;
       APICalls.push(service);
     }
     $.getJSON(service,
-						 // parametrize this.
         function(data){
-          // this syntax works well even for asynchronous results,
-	  // where the size of data is not stable.
-	  // We probably have to change this outer function to
-	  // be intended for a single item from a list of items.
-	  // compare speed with array iteration
           $('#browseBodyDiv').empty();
 
 	  if (data.tracks && data.tracks.length > 0) {
