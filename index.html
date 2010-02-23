@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <script type="text/javascript"
+     src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="cred.js"></script>
+    <script type="text/javascript" src="style.js"></script>
+    <script type="text/javascript" src="jinzora.js"></script>
+
+  <style type="text/css">
+.hidden { display:none; }
+.instanceNode {
+  background: #eee;
+  padding: 5px;
+  border-bottom: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+
+#navBar ul {
+  list-style-type:none;
+}
+
+#navBar ul li {
+  display:inline;
+  background: #ace;
+  padding:5px;
+  cursor:pointer;
+}
+
+.mediaNodeImg {
+  padding-right:20px;
+}
+
+.mediaNodeText {
+  vertical-align:middle;
+}
+
+</style>
+
+
+  </head>
+  <body>
+  <!--
+    <div id="navBar">
+      <ul>
+        <li id="navBrowse">Browse</li>
+        <li id="navPlayback">Playback</li>
+        <li id="navFriends">Friends (?)</li>
+      </ul>
+    </div>
+  -->
+    <div id="contentBrowse" class="contentDiv">
+      <a id="homelink" href="#">home</a>
+      <a id="backlink" href="#" >back</a>
+      <a id="refreshlink" href="#" >refresh</a>
+      <a id="fwdlink" href="#" >fwd</a>
+        <div id="browseBodyDiv">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="hidden">
+
+      <div id="templateNode" class="instanceNode">
+        <table class="mediaNodeTable">
+          <tr><td class="mediaNodeImg">
+            <img class ="thumbnail"/>
+          </td><td class="mediaNodeText">
+            <a class="browselink" href="{url}">{name}</a>
+            <span class="sep">-</span>
+            <a class="playlink" href="{url}">Play</a>
+          </td></tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

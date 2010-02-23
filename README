@@ -1,0 +1,3 @@
+This is a simple client for Jinzora built entirely from HTML, CSS, and Javascript, using the Jinzora API. The script can be run from anywhere, including your local machine, while still connecting to a remote server.
+
+Edit the file 'creds.js' to change servers.
